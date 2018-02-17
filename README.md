@@ -1,8 +1,8 @@
 # Discord Emoji Generator
-2018.02.17~</br>
+2018.02.17</br>
 
 ## Discord Emoji?
-![example one](images/example1.png)</br>
+![example one](images/example1.PNG)</br>
 디스코드(Discord)를 사용하다 보면 위와 같이 이모지(Emoji)라는 이모티콘으로 대화하는 유저분들을 만나기도 합니다. 이런 분들과 대화를 나눌 때면, 같이 이모지로 대화하고 싶어지기도 합니다. 그러나 새 이모지를 삽입하는 단계가 꽤 번거롭기 때문에, 빠르게 이모지로 대화하는 것은 어려울 때가 많습니다.</br>
 그래서 이 프로젝트를 진행하게 되었습니다.
 
@@ -28,6 +28,6 @@ input text file name to generate discord emoji : test.txt
 
 위 예시의 실행결과를 디스코드 메세지에 삽입하면,
 
-![example two](images/example2.png)</br>
+![example two](images/example2.PNG)</br>
 
-위 사진과 같이 이모지가 정상적으로 생성되었음을 알 수 있습니다.
+위 이미지와 같이 이모지가 정상적으로 생성되었음을 확인할 수 있습니다.
