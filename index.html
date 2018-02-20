@@ -34,13 +34,10 @@
                 let ch = input.charAt(i).toLowerCase();
                 if (ch.match(/^[A-Z]$/i)) { //alphabet
                     output += ':regional_indicator_' + ch + ': ';
-                }
-                else {
-                    if (ch.match(/^[0-9]$/)) { // number
-                        output += returnnum(ch);
-                    } else {
-                        output += ch;
-                    }
+                } else if (ch.match(/^[0-9]$/)) { // number
+                    output += returnnum(ch);
+                } else {
+                    output += ch;
                 }
             }
             output = output.replace(' ', '  '); //공백 중복하여 확연히 구별
