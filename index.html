@@ -27,11 +27,11 @@
             return [':zero: ', ':one: ', ':two: ', ':three: ', ':four: ', ':five: ', ':six: ', ':seven: ', ':eight: ', ':nine: '][Number(ch)];
         }
         function convert() {
-            let input = document.getElementById("input").value;
-            let output = '';
+            var input = document.getElementById("input").value;
+            var output = '';
 
-            for (let i = 0; i < input.length; i++) {
-                let ch = input.charAt(i).toLowerCase();
+            for (var i = 0; i < input.length; i++) {
+                var ch = input.charAt(i).toLowerCase();
                 if (ch.match(/^[A-Z]$/i)) { //alphabet
                     output += ':regional_indicator_' + ch + ': ';
                 } else if (ch.match(/^[0-9]$/)) { // number
