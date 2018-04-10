@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <title>Discord Emoji Generator</title>
     <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"/>
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   </head>
   <body>
-    <div id="title">
-      <h1>Discord Emoji Generator</h1>
-    </div>
+    <h1>Discord Emoji Generator</h1>
+    <header></header>
     ​<textarea id="input" style="resize:none;" cols="50" rows="5"></textarea><br><br>
     <button onclick="convert()">Convert</button><br><br>
     <textarea id="output" style="resize:none;" cols="50" rows="5" readonly></textarea><br><br>
     <button onclick="copy()">Copy to Cipboard</button><br><br>
     <script type="text/javascript">
-      var isalpha = function(ch){
-        return /^[A-Z]$/i.test(ch);
+      function isalpha(str) {
+        let regexp = /[^A-z]/g;
+        return !regexp.test(str);
       }
-      var returnnum = function(ch){
+      var returnnum = function(str){
         var num=[':zero: ', ':one: ', ':two: ', ':three: ', ':four: ', ':five: ', ':six: ', ':seven: ', ':eight: ', ':nine: '];
-        return num[Number(ch)];
+        return num[str << 0];
       }
       function convert(){
         document.getElementById("output").value=''; //
